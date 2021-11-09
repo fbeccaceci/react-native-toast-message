@@ -2,7 +2,7 @@
   "name": "react-native-toast-message",
   "version": "2.0.1",
   "description": "Toast message component for React Native",
-  "main": "./lib/index.js",
+  "main": "./index.ts",
   "types": "./lib/index.d.ts",
   "files": [
     "/lib"
