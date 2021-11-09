@@ -43,6 +43,15 @@ export function Toast(props: ToastProps) {
   );
 }
 
+export const ToastWithRef = React.forwardRef((props: ToastProps, ref) => {
+  return (
+    <LoggerProvider enableLogs={false}>
+      <ToastRoot ref={ref} {...props} />
+    </LoggerProvider>
+  );
+})
+
+
 Toast.show = (params: ToastShowParams) => {
   toastRef.current?.show(params);
 };
@@ -50,3 +59,7 @@ Toast.show = (params: ToastShowParams) => {
 Toast.hide = (params?: ToastHideParams) => {
   toastRef.current?.hide(params);
 };
+
+Toast.showWithRef = (ref: ToastRef, params: ToastShowParams) => {
+  ref.show(params)  
+}

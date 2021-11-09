@@ -1,4 +1,5 @@
 export { Toast as default } from './src/Toast';
+export { ToastWithRef } from './src/Toast';
 export { BaseToast } from './src/components/BaseToast';
 export { SuccessToast } from './src/components/SuccessToast';
 export { ErrorToast } from './src/components/ErrorToast';
